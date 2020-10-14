@@ -1,64 +1,93 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
-/* Style the header */
+
+/* Header */
+
 .header {
-  background-color: yellow;
-  padding: 20px;
-  text-align: center;
-  height: 50vh;
-  background-image: url('https://areajugones.sport.es/wp-content/uploads/2019/08/Genshin-Impact.jpg'), url('https://areajugones.sport.es/wp-content/uploads/2019/08/Genshin-Impact.jpg');
-  background-size: contain, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position-x: center, center;
+    background-image: url('../img/pexels-photo-3184460.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20%;
-  padding-right: 20%;
+.header h1 {
+    font-size: 60px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.header p {
+    font-size: 40px;
 }
 
-/*Image Gallery*/
-.gallery {
-  padding: 20px;
-  float: left;
-  width: 33.33%;
-  text-align: center;
-}
 
-.gallery img {
-  width: 100%;
-  text-align: center;
-}
+/* One Column */
 
-.gallery desc {
-  padding: 15px;
-  text-align: center;
-  font-size: 30px;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
+.one-column {
+    float: left;
+    padding: 20px 20%;
     width: 100%;
-  }
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+
+/* Row */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Three Column */
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Background Color */
+
+#cadetblue {
+    background-color: teal;
+}
+
+
+/* Two Column */
+
+.two-column {
+    float: left;
+    padding: 20px 1%;
+    width: 50%;
+}
+
+
+/* Responsive layout */
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
 }
