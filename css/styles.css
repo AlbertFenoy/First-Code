@@ -120,4 +120,13 @@ body {
     .four-column {
         width: 100%;
     }
+    .header {
+        background-image: url('../img/pexels-photo-3756879.jpeg');
+    }
+    .header h1 {
+        color: white;
+    }
+    .header p {
+        color: white;
+    }
 }
