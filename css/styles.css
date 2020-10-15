@@ -84,6 +84,34 @@ body {
 }
 
 
+/* Four Column */
+
+.four-column {
+    float: left;
+    padding: 20px;
+    width: 25%;
+}
+
+
+/* Footer-a */
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white;
+}
+
+#footer-b {
+    background-color: #868e96;
+}
+
+#footer-b p {
+    text-align: center;
+}
+
+
 /* Responsive layout */
 
 @media screen and (max-width:600px) {
